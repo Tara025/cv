@@ -1,0 +1,131 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(194, 211, 245);
+    min-width: 550px;
+}
+
+h4 {
+    color: blue;
+}
+
+ol {
+    list-style: none;
+}
+
+.picLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.certificat {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+    border-radius: 35%;
+}
+
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+    border-radius: 35%;
+    /* border: 1px solid blue;*/
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+h3 {
+    color: blue;
+    margin-top: 10px;
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(173, 196, 243);
+    border-radius: 12%;
+    border: 1px solid blue;
+    height: 450px;
+}
+
+.container-box {
+    padding: 0;
+    display: flex;
+}
+
+.box {
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 150px;
+    height: 150px;
+    border-radius: 25%;
+    border: darkslategray solid 1px;
+    background-color: aliceblue;
+    color: darkslategray;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.icon {
+    margin-top: 5px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.text {
+    color: blue;
+    display: flex;
+    flex-direction: column;
+}
+
+.text p:nth-child(2) {
+    color: darkslategray;
+}
+
+p {
+    max-width: auto;
+    margin: 0;
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .certificat {
+        animation: logo-spin infinite 50s linear;
+    }
+}
+
+.card {
+    padding: 2em;
+}
+
+.read-the-docs {
+    color: #888;
+}
